@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./locationmedia.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/7542b063b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="overlay" id="overlay">
+        <img src="../../Resources/logo/logo1.jpg" alt="">
+    </div>
+
+
+    <!-- header starts -->
+     <!-- nav bar begins -->
+     <header>
+
+        <!-- side nav begins -->
+
+        <div class="sidebtn" id="sbtn"><i class="fa-solid fa-bars btnicon"></i></div>
+        <div class="logo1">
+            <img src="../../Resources/logo/logo1.jpg" alt="">
+        </div>
+        
+    <div class="long"></div>
+
+            <div class="sidebar" id="sidebar">
+                <img src="../../Resources/logo/logo1.jpg" alt="logo">
+                <i class="fa-solid fa-xmark btni2" id="btni2"></i>
+                <a href="">Home</a>
+                 <hr>
+                <a href="">Menu</a>
+                 <hr>
+                <a href="">Review</a>
+                 <hr>
+                <a href="">About</a>
+                <hr>
+                <a href="">Contact Us</a>
+                <hr>
+                <div class="side-socials">
+                    <i class="fa-brands fa-facebook-f icon"></i>
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <i class="fa-brands fa-whatsapp icon"></i>
+                </div>
+        
+        
+            </div>        <!-- side nav ends -->
+
+
+       
+           <nav>
+            <div class="navlink">
+                <a href="">Home</a>
+                <a href="">Menu</a>
+                <a href="">About</a>
+                <a href="">Review</a>
+                <a href="">Grills</a>
+                <a href="">Pasteries</a>
+            </div>
+        </nav>
+
+        <div class="order">
+            <p>ORDER ONLINE</p>
+        </div>
+
+      </header>
+
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.7166546102744!2d5.610782314273336!3d6.200643995486496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3da576af8b9%3A0x902f8c4fa05e0bfa!2sObagie%20Ogheghe%20Rd%2C%20Benin%20City%20300001%2C%20Edo%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1728928762367!5m2!1sen!2sng"
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
+
+<!-- body starts -->
+
+<div class="cont" id="cont">
+    <div class="main">
+      <h3>Order Now</h3>
+      <input type="text" placeholder="Your Name" id="name">
+      <input type="email" placeholder="Email" id="email">
+      <input type="number" placeholder="Telephone" id="tel">
+      <input type="text" placeholder="Comment" id="comment">
+  
+      <button type="submit" id="sendbtn">Send to Whatsapp</button>
+  
+    </div>
+    
+</div>
+  
+<!-- body ends -->
+
+    
+
+        <!-- footer starts  -->
+        <div class="footer-cont">
+            <div class="items">
+                <img src="../../Resources/logo/logo1.jpg" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nulla ex est dignissimos, dolores consequuntur tempora,
+                    dolorum quibusdam eum nihil similique,</p>
+               <h3>OPENING HOURS</h3>
+               <p>Monday - Sunday</p>
+               <p>9:00am to 10:00pm</p>
+            </div>
+            <div class="items">
+                <h3>NAVIGATION</h3>
+                <a href="">Menu</a>
+                <a href="">About Us</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Location</a>
+            </div>
+            <div class="items">
+                <h3>Dishes</h3>
+                    <a>Fish & veggies</a>
+                    <a>Tofu chili</a>
+                    <a>Egg & Cocumber</a>
+                    <a>Lumpia with Sauce</a>
+            </div>
+            <div class="items">
+                <h3>Follow Us</h3>
+                <div class="icon">
+                <i class="fa-brands fa-facebook-f i"></i>
+                <i class="fa-brands fa-instagram i" ></i>
+                <i class="fa-brands fa-whatsapp i"></i>
+            </div>
+            </div>
+     </div>
+        <hr>
+
+   
+
+        <footer>
+            <div class="boxx">
+           <p class="copy">&copy: 2024 Blossom P Restaurant and FastFood all right reserved </p>
+           <div class="terms">
+            <a href="">Terms Of Service</a>
+            <a href="">Privacy Policy</a>   
+        </div>
+    </div>
+        </footer>
+
+                <!-- footer ends  -->
+
+
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+// side bar
+let sidebtn = document.getElementById('sbtn');
+let sidebar = document.getElementById('sidebar');
+let btni2 = document.getElementById('btni2');
+
+sidebtn.addEventListener('click', function(event) {
+    event.preventDefault();
+
+    // Toggle the sidebar visibility
+    sidebar.classList.toggle('sidetoggle');
+    sidebtn.classList.toggle('open');
+    
+    // Change the button icon based on the sidebar state
+    if (sidebar.classList.contains('sidetoggle')) {
+       sidebtn.innerHTML = '<i class="fa-solid fa-xmark btni2"></i>';
+
+        
+    } else {
+        sidebtn.innerHTML = '<i class="fa-solid fa-bars btnicon"></i>'; // Show hamburger icon  
+        sidebtn.classList.remove('open'); 
+    };
+});
+
+btni2.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            // Close the sidebar if it's open
+            if (sidebar.classList.contains('sidetoggle')) {
+                sidebar.classList.remove('sidetoggle'); // Remove toggle class
+                sidebtn.innerHTML = '<i class="fa-solid fa-bars btnicon"></i>'; // Revert to hamburger icon
+                sidebtn.classList.remove('open');
+            }
+        });
+
+        setTimeout(function() {
+        // Slide the overlay page up by using CSS translateY
+        $('.overlay').css('transform', 'translateY(-100%)');
+        
+        // After the sliding is complete (1 second), display the main content
+        setTimeout(function() {
+            $('.overlay').hide(); // Hide the overlay
+            $('.main-content').fadeIn(); // Reveal the main content
+        }, 1000); // Delay matches the slide-up duration (1 second)
+    }, 1000); // Optional: Delay before the sliding starts
+
+$(document).ready(function() {
+  $('#sendbtn').click(function(event){
+    event.preventDefault();
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var tel =  $('#tel').val();
+    var comment = $('#comment').val();
+
+    var formattedMessage = 'Hello my name is' + name + '.\nEmail:' + email + '.\telephone:' + tel + '.\ncomment:' + comment;
+
+    var phoneNumber = '2347064724712'
+
+     var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(formattedMessage);
+
+     window.open(whatsappUrl, '_open');
+  });
+  
+});
+
+ 
+})
+</script>
+</html>

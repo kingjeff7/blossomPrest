@@ -1,0 +1,362 @@
+@media only screen and (max-width:780px){
+/* sidebar */
+nav{
+    display: none;
+}
+
+/* logo */
+.logo1{
+    display: block;
+    left: 310px;
+    top: 10px;
+    width: 60px;
+    height: auto;
+    /* border: 2px solid orangered; */
+}
+
+.sidebar {
+    width: 250px; /* Adjust the width for smaller screens */
+    display: flex;
+}
+
+.sidebtn {
+    display: block; /* Ensure the button is visible on mobile */
+    right: 0px; /* Adjust the button position */
+    position: fixed;
+    margin-top: 10px;
+    color: orangered;
+    width: 97%;
+    z-index: 13;
+
+}
+
+.long{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #262626;
+    position: fixed;
+    z-index: 12;
+    top: 0;
+}
+
+/* boby starts */
+
+    /* -----header welcome------- */
+    header .welcome{
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+header .welcome h1{
+    font-size: 1.5rem;
+    text-transform:capitalize;
+}
+header .welcome p{
+    font-size: 16px;
+}
+header .welcome .w-btn{
+   width: 80%;
+   }
+  
+header .welcome .w-btn a{
+  padding: 5px 20px;
+ }
+
+/* swipper begins */
+
+    .swiper-slide:nth-child(1),
+    .swiper-slide:nth-child(2),
+    .swiper-slide:nth-child(3),
+    .swiper-slide:nth-child(4){
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    /* swipper ends */
+    
+    header .welcome{
+        width: 70%;
+        top: 73%;
+        left: 40%;
+    
+    }
+    header .welcome h1{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: white;
+    }
+    header .welcome p{
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: white;
+    }
+    header .welcome .w-btn{
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       margin-top: 100px;
+    }
+      
+    header .welcome .w-btn a{
+      padding: 10px 20px;
+     }
+     header .welcome .w-btn a:nth-child(1){
+        font-size: 20px;
+        width: 30%;
+        
+       }
+       header .welcome .w-btn a:nth-child(2){
+        font-size: 20px;
+        width: 60%;
+       }
+
+    /* special */
+    .submenu-cont{
+        width: 100%;
+        margin: 50px auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+         background-color: #ffd012;
+
+    }
+
+    .subm .submenu img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto 10px ;
+    }
+    .special .section-sub1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-sub1 h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 5px;
+    }
+    .section-sub1 p{
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: 0;
+        font-size: 16px;
+        text-align: left;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .submenu-cont .subm{
+        width: 100%;
+        height: 1000px;
+        margin: 0px 0px auto 0;
+        display: grid;
+        justify-content: center;
+        /* background-color: orangered; */
+        align-items: center;
+    }
+    .submenu-cont .subm .submenu{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .submenu-cont .subm .submenu img{
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto 20px ;
+    }
+    .subm .submenu button{
+        position: absolute;
+        top: 20px;
+        right: 50px;
+         }
+         .subm .submenu p{
+            margin: 0px auto 0;
+            color: orangered;
+         }
+         .subm .submenu a{
+            margin: 10px auto 0;
+            padding:10px 15px;
+            font-weight: 500;
+            box-shadow: 1px 1px 1px rgba(0,0,0,.9);
+        
+            }
+    
+    /* submenu-cont2 */
+    .submenu-cont2{
+        width: 100%;
+        height: 50%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto 50px;
+        background-color: #ffd012;
+
+    }
+    .submenu-cont2 h1{
+        width: 100%;
+        text-align: center;
+        color: orangered;
+        font-weight: 900;
+        font-size: 20px;
+        
+    }
+    .submenu-cont2 h4{
+        display: block;
+        margin-left: 50px;
+    }
+    .submenu-cont2 a{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background-color: orangered;
+      padding: 10px 15px;
+        font-size: 16px;
+        color: black;
+        font-weight: 900;
+        width: 150px;
+        margin: 30px auto 0;
+        border-radius: 7px;
+
+
+        
+    }
+    .submenu-cont2 .subm2-img{
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .submenu-cont2 .subm2-text{
+        width: 100%;
+        height: 00%;
+        margin: 20px auto 10px;
+        padding: 5px;
+        
+    }
+    .submenu-cont2 .subm2-text h1{
+        width: 100%;
+        display: block;
+        margin: 50px 0 20px 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+
+
+     }
+     .submenu-cont2 .subm2-text p{
+        display: block;
+         font-size: 20px;
+         margin: 0 0 40px 0;
+         font-weight: 400;
+         width: 100%;
+         /* height: 400px; */
+
+      }
+      .submenu-cont2 .subm2-text a{
+        width:40%;
+        display: block;
+        padding:10px 3px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+/* boby ends */
+    
+
+    /* footer begins */
+
+
+    .footer-cont{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap: 10px;
+        margin-top: -50px;
+        position: relative;
+        
+    
+    }
+    
+    hr{
+           margin: 0px auto 0;
+           width: 60%;
+        }
+         
+        footer{
+            width: 100%;
+        }
+        footer .boxx .copy{
+            margin-left: 30px;
+            
+        }
+    
+        footer .boxx .terms{
+            width: 400px;
+            margin-right: 0;
+            margin-left: 20px;
+            
+        }
+
+        .footer-cont .items:nth-child(4) .icon{
+            width: 100%;
+            font-size: 10px;
+            padding: 3px;
+            margin-left: -23px;
+        }
+
+        .footer-cont .items:nth-child(3){
+            margin-left: 10px;
+        }
+        .footer-cont .items:nth-child(3) h3{
+            margin-left: 10px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(4) h3{
+            margin-left: -5px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(1) h3{
+            margin-left: 10px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(1){
+            margin-left: 10px;
+        }
+
+        .footer-cont .items:nth-child(2) h3{
+            margin-left: 2px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(2){
+            margin-left: -10px;
+        }
+ 
+    /* footer ends */
+
+}
+/* ----desktop-------- */

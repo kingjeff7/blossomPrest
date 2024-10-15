@@ -1,0 +1,653 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+body,
+html{
+    width: 100%;
+    /* background-image: url(./img/bg2.png); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* -----HEADER------ */
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/*  */
+header .welcome{
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    z-index: ;
+
+}
+header .welcome h1{
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+header .welcome p{
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+}
+header .welcome .w-btn{
+   display: flex;
+   width: 70%;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+  
+header .welcome .w-btn a{
+  padding: 10px 40px;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+ }
+ header .welcome .w-btn a:nth-child(1){
+    background-color: black;
+    
+   }
+   header .welcome .w-btn a:nth-child(2){
+    background-color:orangered;
+   }
+     
+   
+   
+  
+/* ---logo---- */
+.logo1{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    position: fixed;
+    top: 5px;
+    left: 2px;
+    z-index: 200;
+}
+.logo1 img{
+    width: 95%;
+    height: auto;
+}
+
+/* nav bar bergins  */
+nav{
+    width: 100%;
+    height: 100px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    position: fixed;
+    background-color: rgb(68, 66, 66);
+    overflow: hidden;
+}
+
+nav .navlink{
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+nav .navlink a{
+    display: inline-block;
+    margin-top:20px;
+    margin-right: 5px;   
+    margin-left: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .5s;
+    
+}
+nav .navlink a:last-child{
+    margin-top:10px;
+    margin-right: 80px;
+    margin-left: 100px;
+    padding: 15px 15px;
+    color: rgb(13, 1, 1);
+    background-color: orangered;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+nav .navlink a:first-child:hover,
+nav .navlink a:nth-child(2):hover,
+nav .navlink a:nth-child(3):hover,
+nav .navlink a:nth-child(4):hover,
+nav .navlink a:nth-child(5):hover,
+nav .navlink a:nth-child(6):hover{
+color: brown;
+font-size: 17px;
+border-bottom: 5px solid black;
+border-bottom-width: 5px;
+/* border-radius: 10px; */
+
+}
+
+    
+
+/* nav bar ends */
+
+/* ====SIDEBAR====== */
+.sidebtn {
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: all 0.5s;
+    z-index: 1; /* Make sure it's above the sidebar */
+}
+
+/* Sidebar Hidden Off-Screen Initially */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(34, 29, 1);
+    position: fixed;
+    top: 0;
+    left: -300px; /* Off-screen by default */
+    transition: all 0.5s;
+    z-index: 99; /* Below the button */
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Sidebar Slides In When .sidetoggle is Applied */
+.sidetoggle {
+    left: 0; /* Slides the sidebar into view */
+}
+/* Ensure smooth transition for the icon */
+.btnicon {
+    font-size: 30px;
+    transition: transform 0.9s ease; /* Smooth rotation transition */
+}
+
+/* When sidebar is toggled (open), rotate the icon */
+.open .btnicon {
+    transform: rotate(90deg); /* Rotates the bars icon to look like an X */
+}
+
+.sidebar img:first-child {
+    display: block;
+    width: 40%;
+    height: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 2px 0 0 10px;
+    width: 80%;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    margin: 20px 0 5px 20px;
+    transition: all 0.5s;
+}
+.btni2{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: orangered;
+}
+
+.sidebar a:hover {
+    box-shadow: 2px 2px 2px 2px rgb(130, 130, 162);
+    border-color: white;
+}
+
+.sidebar hr {
+    width: 80%;
+    margin-left: 20px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: rgb(5, 0, 0);
+    content: 'hello';
+    border-color: black;
+}
+
+.sidetoggle {
+    transform: translateX(0);
+}
+
+.btnicon {
+    font-size: 30px;
+}
+
+.side-socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    display: inline-block;
+    margin: 20px 10px 0 20px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.icon:nth-child(1):hover {
+    color: blue;
+}
+
+.icon:nth-child(2):hover {
+    color: rgb(79, 7, 83);
+}
+
+.icon:nth-child(3):hover {
+    color: rgb(7, 84, 41);
+}
+
+/* side bar ends */
+
+
+
+/* ====swiper==== */
+.swiper {
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+
+  }
+ .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    }
+
+    .swiper-slide:nth-child(1){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/afrfican.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .swiper-slide:nth-child(2){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/bakery.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .swiper-slide:nth-child(3){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/burger.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: con;
+        background-attachment: fixed;
+    }
+
+
+    /* special */
+    .special{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        background-color: #ffd012;
+    }
+    .special .section-sub1{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     .section-sub1 h1{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 5px;
+    }
+    .section-sub1 p{
+        display: block;
+        width: 40%;
+        text-align: center;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .submenu-cont{
+        width: 100%;
+        margin: 50px auto 200px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .subm{
+        width: 100%;
+        margin: 50px auto 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .subm .submenu{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        text-align: center;
+    }
+    .subm .submenu img{
+        width: 50%;
+        height: auto;
+        display: block;
+        margin: 0 auto 30px ;
+    }
+    .subm .submenu button{
+        position: absolute;
+        top: 10px;
+        right: 70px;
+        cursor:default;
+        padding: 25px 20px;
+        border-radius: 100%;
+        background-color: black;
+        color: white;
+    
+    }
+    .subm .submenu a{
+        display: block;
+        margin: 30px auto 0;
+        padding:10px 5px;
+        background-color: orangered;
+        color: black;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 200;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+        }
+        .submenu-cont2{
+            width: 80%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto 0px;
+        }
+        .submenu-cont2 h1{
+            width: 40%;
+            font-size: 30px;
+            color: orangered;
+            font-weight: 900;
+        }
+
+        .submenu-cont2 h4{
+            display: none;
+            }
+        .submenu-cont2 a{
+            display: none;
+           }
+        .submenu-cont2 .subm2-img{
+            width: 50%;
+            height: 50%;
+        }
+        .submenu-cont2 .subm2-img img{
+            width: 100%;
+            height: auto;
+            margin: 0;
+            
+
+
+        }
+        .submenu-cont2 .subm2-text{
+            width: 40%;
+            height: 100%;
+            margin: 0 50px 0 30px;
+            align-self: flex-start;
+        }
+        .submenu-cont2 .subm2-text h1{
+           margin: 50px 0 20px 0;
+           font-size: 2.5rem;
+           font-weight: 600;
+
+
+        }
+        .submenu-cont2 .subm2-text p{
+            font-size: 16px;
+            margin: 0 0 20px 0;
+            font-weight: 500;
+
+         }
+         .submenu-cont2 .subm2-text a{
+            width:40%;
+            display: block;
+            margin:0 ;
+            padding:20px 10px;
+            background-color: orangered;
+            color: white;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            text-decoration: none;
+            font-weight: 200;
+            box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+            text-align: center;
+    }
+
+    /* ---footer starts */
+    .footer-cont{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 100px;
+        background-color: rgb(68, 66, 66);
+    
+    }
+    
+    .items{
+        /* background-color: aqua; */
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .footer-cont .items:first-child img{
+        width: 100px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .footer-cont .items:first-child p{
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-align: start;
+        color: white;
+    
+    }
+    .footer-cont .items:first-child h3{
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: px;
+        font-weight: 1000;
+        color: white;
+    
+    }
+    .footer-cont .items:first-child p{
+        margin-top: 20px;
+        margin-left: 10px;
+        color: white;
+    
+    }
+    
+    .footer-cont .items:nth-child(2){
+        margin-top: 0px;
+        color: white;
+    
+    }
+    
+    .footer-cont .items:nth-child(2) h3{
+        margin-bottom: 20px;
+        margin-top: 90px;
+        color: white;
+    
+    
+    }
+    .footer-cont .items:nth-child(2) a{
+        display: block;
+        text-decoration: none;
+        padding: 7px;
+        color: white;
+    
+        
+    }
+    
+    .footer-cont .items:nth-child(3){
+        margin-top: 0px;
+    }
+    .footer-cont .items:nth-child(3) h3{
+        margin-bottom: 20px;
+        margin-top: 90px;
+        color: white;
+    
+    
+    }
+    .footer-cont .items:nth-child(3) a{
+        display: block;
+        text-decoration: none;
+        padding: 7px;
+        color: white;
+        
+    }
+    
+    .footer-cont .items:nth-child(4){
+        margin-top: 0px; 
+    }
+    .footer-cont .items:nth-child(4) h3{
+        margin-bottom: 20px;
+        margin-top: 90px;
+        color: white;
+    
+    }
+    .footer-cont .items:nth-child(4) .icon{
+        width: 70%;
+        display: block;
+        justify-content: space-between;
+        margin-left: -65px;
+    
+    } 
+    .footer-cont .items:nth-child(4) .icon i{
+        color:  black;
+        font-size: 20px;
+        color: white;
+        padding: 5px;
+        /* border: 1px solid black; */
+        /* border-radius: 20px; */
+        transition: all 1s;
+        font-weight: 900;
+    }
+    .footer-cont .items:nth-child(4) .icon i:nth-child(1):hover{
+        color: blue;
+    }
+    .footer-cont .items:nth-child(4) .icon i:nth-child(2):hover{
+        color: purple;
+    }
+    .footer-cont .items:nth-child(4) .icon i:nth-child(3):hover{
+        color: green;
+    }
+    
+    footer{
+            width: 100%;
+            margin-top: 0px;
+            background-color: rgb(68, 66, 66);
+            
+        }
+        footer .boxx{
+            display: flex;
+            justify-content: space-between;
+        }
+        footer .boxx .copy{
+            margin-left: 80px;
+            display: block;
+            text-align: left;
+        }
+        footer .boxx .terms{
+            margin-right: 80px;
+            
+        }
+        footer .boxx .terms a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+            text-align: left;
+        }
+    
+        hr{
+            width: 90%;
+            font-size: 5px;
+            margin: 50px auto 0;
+        }
+    
+    /* ---footer ends */
+
+    /* sliding-effects starts */
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 200;
+    transition: transform 1s ease; /* For smooth sliding */
+    transform: translateY(0); /* Start in view */
+}
+
+
+.overlay img {
+    width: 200px;
+    height: auto;
+}
+ 
+
+/* sliding-effects ends */
+
+    

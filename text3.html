@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @media only screen and (max-width:780px){
+            .submenu-cont{
+            width: 100%;
+            margin: 50px auto 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+        }
+ 
+        .subm .submenu img{
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px ;
+        }
+
+        }
+      * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+        }
+        .special{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .special .section-sub1{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+         .section-sub1 h1{
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 5px;
+        }
+        .section-sub1 p{
+            display: block;
+            width: 40%;
+            text-align: center;
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .submenu-cont{
+            width: 100%;
+            margin: 50px auto 0;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .subm{
+            width: 100%;
+            margin: 50px auto 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .subm .submenu{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .subm .submenu img{
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px ;
+        }
+        .subm .submenu button{
+            position: absolute;
+            top: 10px;
+            right: 70px;
+            cursor:default;
+            padding: 25px 20px;
+            border-radius: 100%;
+            background-color: black;
+            color: white;
+        
+        }
+        .subm .submenu a{
+            display: block;
+            margin: 30px auto 0;
+            padding:10px 5px;
+            background-color: orangered;
+            color: black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 200;
+            box-shadow: 1px 1px 1px rgba(0,0,0,.5);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="special">
+        <div class="section-sub1">
+            <h1>Our Special Dishes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates recusandae necessitassumenda.</p>
+        </div>
+        <div class="submenu-cont">
+            <div class="subm">
+                <div class="submenu">
+                    <img src="./Resources/css/img/afrfican copy.png" alt="">
+                    <button>3500</button>
+                    <p>Lumpia with sauce</p>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="submenu">
+                    <img src="./Resources/css/img/afrfican copy.png" alt="">
+                    <button>3500</button>
+                    <p>Lumpia with sauce</p>
+                    <a href="">Order Now</a>
+                </div>
+            </div>
+            <div class="subm">
+                <div class="submenu">
+                    <img src="./Resources/css/img/afrfican copy.png" alt="">
+                    <button>3500</button>
+                    <p>Lumpia with sauce</p>
+                    <a href="">Order Now</a>
+                </div>
+                <div class="submenu">
+                    <img src="./Resources/css/img/afrfican copy.png" alt="">
+                    <button>3500</button>
+                    <p>Lumpia with sauce</p>
+                    <a href="">Order Now</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

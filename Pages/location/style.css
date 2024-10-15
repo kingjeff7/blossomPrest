@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* sliding-effects starts */
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top, 
+        rgba(51, 51, 51, 0.9),  /* Dark near the bottom */
+        rgba(51, 51, 51, 0.6),  /* Semi-transparent middle */
+        rgba(51, 51, 51, 0.3)   /* Light/transparent at the top */
+    );
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 10;
+    transition: transform 1s ease; /* For smooth sliding */
+    transform: translateY(0); /* Start in view */
+}
+
+
+.overlay img {
+    width: 200px;
+    height: auto;
+}
+ 
+
+/* sliding-effects ends */
+
+/* --header starts-- */
+
+header{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-color: #ffd012;
+    border-bottom: 3px solid #ff4400;
+}
+
+/* ---logo---- */
+.logo1{
+    width: 70px;
+    /* height: 100px; */
+    margin-left: 10px;
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    z-index: 120;
+    position: fixed;
+}
+.logo1 img{
+    width: 100%;
+    height: auto;
+}
+/* side bar begins */
+
+.sidebtn {
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: all 0.5s;
+    z-index: 1; /* Make sure it's above the sidebar */
+}
+
+/* Sidebar Hidden Off-Screen Initially */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(34, 29, 1);
+    position: fixed;
+    top: 0;
+    left: -300px; /* Off-screen by default */
+    transition: all 0.5s;
+    z-index: 99; /* Below the button */
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Sidebar Slides In When .sidetoggle is Applied */
+.sidetoggle {
+    left: 0; /* Slides the sidebar into view */
+}
+/* Ensure smooth transition for the icon */
+.btnicon {
+    font-size: 30px;
+    transition: transform 0.9s ease; /* Smooth rotation transition */
+}
+
+/* When sidebar is toggled (open), rotate the icon */
+.open .btnicon {
+    transform: rotate(90deg); /* Rotates the bars icon to look like an X */
+}
+
+.sidebar img:first-child {
+    display: block;
+    width: 40%;
+    height: auto;
+}
+
+.sidebar a {
+    display: block;
+    padding: 2px 0 0 10px;
+    width: 80%;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    margin: 20px 0 5px 20px;
+    transition: all 0.5s;
+}
+.btni2{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: orangered;
+}
+
+.sidebar a:hover {
+    box-shadow: 2px 2px 2px 2px rgb(130, 130, 162);
+    border-color: white;
+}
+
+.sidebar hr {
+    width: 80%;
+    margin-left: 20px;
+    height: 2px;
+    border-radius: 20px;
+    background-color: rgb(5, 0, 0);
+    content: 'hello';
+    border-color: black;
+}
+
+.sidetoggle {
+    transform: translateX(0);
+}
+
+.btnicon {
+    font-size: 30px;
+}
+
+.side-socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    display: inline-block;
+    margin: 20px 10px 0 20px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.icon:nth-child(1):hover {
+    color: blue;
+}
+
+.icon:nth-child(2):hover {
+    color: rgb(79, 7, 83);
+}
+
+.icon:nth-child(3):hover {
+    color: rgb(7, 84, 41);
+}
+/* side bar ends*/
+
+/* nav bar bergins  */
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 100;
+    position: fixed;
+    background-color: rgb(68, 66, 66);
+}
+
+nav .navlink{
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+nav .navlink a{
+    display: inline-block;
+    margin-top:20px;
+    margin-right: 5px;   
+    margin-left: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+header .order{
+    width: 200px;
+    padding: 20px 40px;
+    background-color: orangered;
+    position: absolute;
+    top: 150px;
+    right: 200px;
+    color: aliceblue;
+    
+
+}
+/* nav bar ends */
+
+
+/* --header ends-- */
+
+
+
+/* ---body starts-- */
+.cont{
+    display: grid;
+    background-color: #ffd012;
+  }
+  .main{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border: 2px solid #ff4400;
+    padding: 10px;
+    place-content: center;
+    row-gap: 30px;
+    margin: 30px auto;
+    background-color: #ffd012;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  } 
+  .main h3{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+  }
+  input{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+  }
+  .main input:nth-child(5){
+    height: 200px;
+    margin-bottom: 35px;
+  }
+  
+  button{
+display: flex;
+justify-self: center; /* Center the button horizontally */
+padding: 10px;
+background-color: #25d366; /* WhatsApp green */
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+ }
+/* body ends */
+
+/* footer starts */
+
+.footer-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgb(68, 66, 66);
+
+}
+
+.items{
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-cont .items:first-child img{
+    width: 100px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.footer-cont .items:first-child p{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: start;
+    color: aliceblue;
+
+}
+.footer-cont .items:first-child h3{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: px;
+    font-weight: 1000;
+    color: aliceblue;
+
+}
+.footer-cont .items:first-child p{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: aliceblue;
+
+}
+
+.footer-cont .items:nth-child(2){
+    margin-top: 0px;
+    color: aliceblue;
+
+}
+
+.footer-cont .items:nth-child(2) h3{
+    margin-bottom: 20px;
+    margin-top: 90px;
+    color: aliceblue;
+
+
+}
+.footer-cont .items:nth-child(2) a{
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    color: aliceblue;
+
+    
+}
+
+.footer-cont .items:nth-child(3){
+    margin-top: 0px;
+}
+.footer-cont .items:nth-child(3) h3{
+    margin-bottom: 20px;
+    margin-top: 90px;
+    color: aliceblue;
+
+
+}
+.footer-cont .items:nth-child(3) a{
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    color: aliceblue;
+    
+}
+
+.footer-cont .items:nth-child(4){
+    margin-top: 0px; 
+}
+.footer-cont .items:nth-child(4) h3{
+    margin-bottom: 20px;
+    margin-top: 90px;
+    color: aliceblue;
+
+}
+.footer-cont .items:nth-child(4) .icon{
+    width: 70%;
+    display: block;
+    justify-content: space-between;
+    margin-left: -65px;
+
+} 
+.footer-cont .items:nth-child(4) .icon i{
+    color:  black;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    /* border: 1px solid black; */
+    /* border-radius: 20px; */
+    transition: all 1s;
+    font-weight: 900;
+}
+.footer-cont .items:nth-child(4) .icon i:nth-child(1):hover{
+    color: blue;
+}
+.footer-cont .items:nth-child(4) .icon i:nth-child(2):hover{
+    color: purple;
+}
+.footer-cont .items:nth-child(4) .icon i:nth-child(3):hover{
+    color: green;
+}
+
+footer{
+        width: 100%;
+        margin-top: 50px;
+        /* background-color: red; */
+    }
+    footer .boxx{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .boxx .copy{
+        margin-left: 80px;
+        display: block;
+        text-align: left;
+    }
+    footer .boxx .terms{
+        margin-right: 80px;
+        
+    }
+    footer .boxx .terms a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    hr{
+        width: 90%;
+        font-size: 5px;
+        margin: 50px auto 0;
+    }
+
+/* ---footer ends */
+
+

@@ -1,0 +1,185 @@
+@media only screen and (max-width:800px){
+
+    /* header starts */
+
+    nav{
+        display: none;
+    }
+    
+    /* logo */
+    .logo1{
+        display: block;
+        left: 310px;
+        top: 10px;
+        width: 60px;
+        height: auto;
+        /* border: 2px solid orangered; */
+    }
+
+    .sidebar {
+        width: 250px; /* Adjust the width for smaller screens */
+        display: flex;
+    }
+
+    .sidebtn {
+        display: block; /* Ensure the button is visible on mobile */
+        right: 0px; /* Adjust the button position */
+        position: fixed;
+        margin-top: 10px;
+        color: orangered;
+        width: 190%;
+        z-index: 2;
+
+    }
+    .long{
+        display: block;
+        width: 100%;
+        height: 80px;
+        background-color: #ffd012;
+        position: fixed;
+        z-index: 1;
+    }
+    header{
+        width: 100%;
+        background-color: rgb(116, 116, 117);
+    }
+
+    header .order{
+        /* width: 100px; */
+        top: 140px;
+        left: 40%;
+        /* transform: translate(-50%, 0); */
+    
+    }
+    /* header ends */
+
+   
+    /* body starts */
+    .food{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr  ;
+
+         }
+
+         .food .box{
+            width: 300px;
+            height: 350px;
+        }
+    .m{
+        margin-top: -10px;
+        width: 100%;
+    }
+    .main .meal h1{
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .main .meal p{
+        width: 100%;
+        font-size: 25px;
+    }
+    
+    .main{
+        width: 100%;
+        height: 3300px;
+    }
+   .main .menu{
+       width: 100%;
+    }
+    .main .menu p a{
+        padding: 3px;
+        font-size: 20px;
+        
+    }
+    .main .menu p a:hover{
+        border: 1px solid brown;
+        transition: ease  2s all;
+        
+    }
+    
+    /* body ends */
+
+     /* footer starts */
+     .footer-cont{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap: 10px;
+        margin-top: 5px;
+        position: relative;
+        
+    
+    }
+    
+    hr{
+           margin: 0px auto 0;
+           width: 60%;
+        }
+         
+        footer{
+            width: 100%;
+        }
+        footer .boxx .copy{
+            margin-left: 30px;
+            
+        }
+    
+        footer .boxx .terms{
+            width: 400px;
+            margin-right: 0;
+            margin-left: 20px;
+            
+        }
+
+        .footer-cont .items:nth-child(4) .icon{
+            width: 100%;
+            font-size: 10px;
+            padding: 3px;
+            margin-left: -23px;
+        }
+
+        .footer-cont .items:nth-child(3){
+            margin-left: 10px;
+        }
+        .footer-cont .items:nth-child(3) h3{
+            margin-left: 10px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(4) h3{
+            margin-left: -5px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(1) h3{
+            margin-left: 10px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(1){
+            margin-left: 10px;
+        }
+
+        .footer-cont .items:nth-child(2) h3{
+            margin-left: 2px;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .footer-cont .items:nth-child(2){
+            margin-left: -10px;
+        }
+        /* footer ends */
+
+        .overlay{
+            width: 100%;
+        }
+}
+
+
+    
+
+       
+    
+
+        

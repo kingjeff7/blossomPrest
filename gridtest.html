@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7542b063b0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+.footer-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.items{
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-cont:first-child img{
+    width: 100px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.footer-cont:first-child p{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.footer-cont:first-child h3{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: px;
+    font-weight: 1000;
+}
+.footer-cont:first-child p{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.footer-cont .items:nth-child(2){
+    margin-top: 0px;
+}
+
+.footer-cont .items:nth-child(2) h3{
+    margin-bottom: 20px;
+    margin-top: 90px;
+
+}
+.footer-cont .items:nth-child(2) a{
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    
+}
+
+.footer-cont .items:nth-child(3){
+    margin-top: 0px;
+}
+.footer-cont .items:nth-child(3) h3{
+    margin-bottom: 20px;
+    margin-top: 90px;
+
+}
+.footer-cont .items:nth-child(3) a{
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+}
+
+.footer-cont .items:nth-child(4){
+    margin-top: 0px; 
+}
+.footer-cont .items:nth-child(4) h3{
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+.footer-cont .items:nth-child(4) .icon{
+    width: 70%;
+    display: block;
+    justify-content: space-between;
+    margin-left: 10px;
+} 
+.footer-cont .items:nth-child(4) .icon i{
+    color:  black;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.footer-cont .items:nth-child(4) .icon i:nth-child(1):hover{
+    background-color: blue;
+}
+.footer-cont .items:nth-child(4) .icon i:nth-child(2):hover{
+    background-color: purple;
+}
+.footer-cont .items:nth-child(4) .icon i:nth-child(3):hover{
+    background-color: green;
+}
+
+footer{
+        width: 100%;
+        margin-top: 50px;
+        /* background-color: red; */
+    }
+    footer .box{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .box .copy{
+        margin-left: 80px;
+    }
+    footer .box .terms{
+        margin-right: 80px;
+        
+    }
+    footer .box .terms a{
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+    }
+
+    hr{
+        width: 90%;
+        font-size: 5px;
+        margin: 50px auto 0;
+    }
+
+
+@media only screen and (max-width:800px){
+    .footer-cont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 10px;
+    margin-top: 0px;
+
+}
+
+hr{
+        margin: 0px auto 0;
+    }
+
+    footer .box .copy{
+        margin-left: 30px;
+    }
+
+    footer .box .terms{
+        width: 400px;
+        margin-right: 0;
+        margin-left: 20px;
+        
+    }
+}
+
+
+</style>
+<body>
+    
+
+    <div class="footer-cont">
+        <div class="items">
+            <img src="./Resources/logo/logo1.jpg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nulla ex est dignissimos, dolores consequuntur tempora,
+                dolorum quibusdam eum nihil similique,</p>
+           <h3>OPENING HOURS</h3>
+           <p>Monday - Sunday</p>
+           <p>9:00am to 10:00pm</p>
+        </div>
+        <div class="items">
+            <h3>NAVIGATION</h3>
+            <a href="">Menu</a>
+            <a href="">About Us</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            <a href="">Location</a>
+        </div>
+        <div class="items">
+            <h3>Dishes</h3>
+                <a>Fish & veggies</a>
+                <a>Tofu chili</a>
+                <a>Egg & Cocumber</a>
+                <a>Lumpia with Sauce</a>
+        </div>
+        <div class="items">
+            <h3>Follow Us</h3>
+            <div class="icon">
+            <i class="fa-brands fa-facebook-f i"></i>
+            <i class="fa-brands fa-instagram i" ></i>
+            <i class="fa-brands fa-whatsapp i"></i>
+        </div>
+        </div>
+ </div>
+    <hr>
+    <footer>
+        <div class="box">
+       <p class="copy">&copy: 2024 Blossom P Restaurant and FastFood all right reserved </p>
+       <div class="terms">
+        <a href="">Terms Of Service</a>
+        <a href="">Privacy Policy</a>   
+    </div>
+</div>
+    </footer>
+</body>
+</html>

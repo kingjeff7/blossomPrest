@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .title{
+            width: 30%;
+            height: auto;
+            margin: 200px auto 0;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid brown;
+            
+        }
+        .title h1{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .title h5{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-weight: 200;
+        
+    }
+    .menu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 2px solid green;
+        margin-top: 100px;
+        align-items: center;
+       
+
+    }
+    .menu .sub-menu{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        
+    }
+    .sub-menu .breakfast{
+        width: 35%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 0 0;
+        border-radius: 10px;
+    
+        border: 3px solid orangered;
+    }
+    .menu .breakfast h3{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .menu .breakfast .item{
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0 0 0;
+    }
+
+    .menu .breakfast .item1{
+        background-color: rgb(238, 231, 231);
+    }
+    .menu .breakfast .item p:first-child{
+        margin-left: 10px;
+    }
+    .menu .breakfast .item p:last-child{
+        margin-right: 10px;
+    }
+
+    
+ .menu .sub-menu2 .lunch{
+        width: 48%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 0 0;
+        border-radius: 10px;
+    
+        border: 3px solid orangered;
+    }
+    .menu .sub-menu2 .lunch h3{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .menu .sub-menu2 .lunch .item{
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0 0 0;
+    }
+    .menu .sub-menu2 .lunch .item p:first-child{
+        margin-left: 10px;
+    }
+    .menu .sub-menu2 .lunch .item p:last-child{
+        margin-right: 10px;
+    }
+
+
+    .menu .sub-menu3 .dinner{
+        width: 48%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 0 0 0;
+        border-radius: 10px;
+    
+        border: 3px solid orangered;
+    }
+    .menu .sub-menu3 .dinner h3{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .menu .sub-menu3 .dinner .item{
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0 0 0;
+    }
+    .menu .sub-menu3 .dinner .item p:first-child{
+        margin-left: 10px;
+    }
+    .menu .sub-menu3 .dinner .item p:last-child{
+        margin-right: 10px;
+    }
+
+
+    .menu .sub-menu4 .supper{
+        width: 48%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto 0;
+        border-radius: 10px;
+    
+        border: 3px solid orangered;
+    }
+    .menu .sub-menu4 .supper h3{
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .menu .sub-menu4 .supper .item{
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0 0 0;
+    }
+    .menu .sub-menu4 .supper .item p:first-child{
+        margin-left: 10px;
+    }
+    .menu .sub-menu4 .supper .item p:last-child{
+        margin-right: 10px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Our Menu</h1>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias maiores ut sit fugiat natus qui officia 
+            impedit debitis Lorem ipsum dolor sit amet consectetur t </h5>
+        </div>
+
+        <div class="menu">
+
+          <div class="sub-menu sub-menu1">
+
+        <div class="breakfast">
+            <h3>breakfast</h3>
+            <div class="item item1">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item item1">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item item1">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+           
+
+
+        </div>
+
+        <div class="breakfast">
+            <h3>Swallow</h3>
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+           
+
+
+        </div>
+
+
+        
+    </div>  
+
+    <div class="sub-menu sub-menu2">
+
+        <div class="lunch">
+            <h3>breakfast</h3>
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+           
+
+
+        </div>
+
+        <div class="lunch">
+            <h3>Swallow</h3>
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+           
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+
+        </div>
+        
+    </div>  
+
+    <div class="sub-menu sub-menu3">
+
+        <div class="dinner">
+            <h3>breakfast</h3>
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+           
+
+
+        </div>
+
+        <div class="dinner">
+            <h3>Swallow</h3>
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+           
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+
+        </div>
+        
+    </div>  
+
+    <div class="sub-menu sub-menu4">
+        <div class="supper">
+            <h3>Swallow</h3>
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+           
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+            <div class="item">
+                <div class="meal"><p>Boiled Yam</p></div>
+                <div class="price"><p>#200</p></div>
+            </div>
+
+
+        </div>
+    </div>
+</div>  
+</body>
+</html>
