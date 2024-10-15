@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./locationmedia.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/7542b063b0.js" crossorigin="anonymous"></script>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://api.whatsapp.com;"> -->
+
 </head>
 <body>
 
@@ -15,7 +17,7 @@
         <img src="../../Resources/logo/logo1.jpg" alt="">
     </div>
 
-
+<div class="main-content">
     <!-- header starts -->
      <!-- nav bar begins -->
      <header>
@@ -32,15 +34,15 @@
             <div class="sidebar" id="sidebar">
                 <img src="../../Resources/logo/logo1.jpg" alt="logo">
                 <i class="fa-solid fa-xmark btni2" id="btni2"></i>
-                <a href="">Home</a>
+                <a href="../../index.html">Home</a>
                  <hr>
-                <a href="">Menu</a>
+                <a href="../../menu2/index.html">Menu</a>
                  <hr>
-                <a href="">Review</a>
+                <a href="../../Pages/pricelist/index.html">Price-list</a>
                  <hr>
-                <a href="">About</a>
+                <a href="../../Pages/About/index.html">About</a>
                 <hr>
-                <a href="">Contact Us</a>
+                <a href="../../Pages/location/index.html">Contact Us</a>
                 <hr>
                 <div class="side-socials">
                     <i class="fa-brands fa-facebook-f icon"></i>
@@ -55,17 +57,16 @@
        
            <nav>
             <div class="navlink">
-                <a href="">Home</a>
-                <a href="">Menu</a>
-                <a href="">About</a>
-                <a href="">Review</a>
-                <a href="">Grills</a>
-                <a href="">Pasteries</a>
+                <a href="../../index.html">Home</a>
+                <a href="../../menu2/index.html">Menu</a>
+                <a href="../../Pages/About/index.html">About</a>
+                <a href="../../Pages/pricelist/index.html">Price-list</a>
+                <a href="../../Pages/location/index.html">Location</a>
             </div>
         </nav>
 
         <div class="order">
-            <p>ORDER ONLINE</p>
+            <p><a href="../../Pages/location/index.html">ORDER ONLINE</a></p>
         </div>
 
       </header>
@@ -91,7 +92,7 @@
       <input type="number" placeholder="Telephone" id="tel">
       <input type="text" placeholder="Comment" id="comment">
   
-      <button type="submit" id="sendbtn">Send to Whatsapp</button>
+      <button type="submit" id="sendbtn"><a href=""https://api.whatsapp.com/send?phone=07046175509&text=Hello!"">Send to Whatsapp</a></button>
   
     </div>
     
@@ -152,7 +153,7 @@
                 <!-- footer ends  -->
 
 
-
+            </div>
 </body>
 
 <script>
@@ -202,6 +203,10 @@ btni2.addEventListener('click', function(event) {
         }, 1000); // Delay matches the slide-up duration (1 second)
     }, 1000); // Optional: Delay before the sliding starts
 
+
+ 
+})
+
 $(document).ready(function() {
   $('#sendbtn').click(function(event){
     event.preventDefault();
@@ -212,16 +217,14 @@ $(document).ready(function() {
 
     var formattedMessage = 'Hello my name is' + name + '.\nEmail:' + email + '.\telephone:' + tel + '.\ncomment:' + comment;
 
-    var phoneNumber = '2347064724712'
+    var phoneNumber = '2347046175509'
 
      var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(formattedMessage);
 
-     window.open(whatsappUrl, '_open');
+     window.open(whatsappUrl, '_opened');
   });
   
 });
 
- 
-})
 </script>
 </html>

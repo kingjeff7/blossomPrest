@@ -34,6 +34,9 @@
     height: auto;
 }
  
+.main-content{
+    display: none;
+}
 
 /* sliding-effects ends */
 
@@ -215,8 +218,9 @@ header .order{
     top: 150px;
     right: 200px;
     color: aliceblue;
-    
-
+}
+header .order a{
+    text-decoration: none;
 }
 /* nav bar ends */
 
@@ -274,6 +278,9 @@ border: none;
 border-radius: 5px;
 cursor: pointer;
  }
+ button a{
+    text-decoration: none;
+ }
 /* body ends */
 
 /* footer starts */
@@ -284,7 +291,7 @@ cursor: pointer;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 10px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 0px;
     background-color: rgb(68, 66, 66);
 
 }

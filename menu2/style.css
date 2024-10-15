@@ -163,7 +163,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* z-index: 100; */
+    z-index: 100;
     position: fixed;
     background-color: rgb(68, 66, 66);
 }
@@ -199,6 +199,7 @@ header .order p a{
     text-decoration: none;
     font-weight: 400;
     color: aliceblue;
+    text-shadow: 8px 8px 12px rgba(0, 0, 0, 20); /* Text shadow */
 }
 
 /* nav bar ends */
@@ -222,14 +223,14 @@ header .order p a{
 .m {
     width: 100%;
     height: 100px;
-    background-color: brown;
+    background-color: #bd3a0f;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: px;
     font-size: 30px;
     font-weight: 900;
-    padding: 0;
+    padding: 0; 
 }
 
 .meal {
@@ -324,7 +325,7 @@ header .order p a{
 }
 
 .box p {
-    background-color: brown;
+    background-color: #bd3a0f;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -367,7 +368,7 @@ header .order p a{
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 10px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 0px;
     background-color: rgb(68, 66, 66);
 
 }

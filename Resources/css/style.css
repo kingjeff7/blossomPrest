@@ -33,7 +33,7 @@ header .welcome{
     position: absolute;
     top: 40%;
     left: 5%;
-    z-index: ;
+    /* z-index: ; */
 
 }
 header .welcome h1{
@@ -62,11 +62,12 @@ header .welcome .w-btn a{
   padding: 10px 40px;
   color: white;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 50px;
   display: block;
   box-shadow: 2px 2px 2px rgba(0,0,0,.5);
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  z-index: 10;
  }
  header .welcome .w-btn a:nth-child(1){
     background-color: black;
@@ -87,7 +88,7 @@ header .welcome .w-btn a{
     position: fixed;
     top: 5px;
     left: 2px;
-    z-index: 200;
+    z-index: 120;
 }
 .logo1 img{
     width: 95%;
@@ -286,28 +287,63 @@ border-bottom-width: 5px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     }
 
     .swiper-slide:nth-child(1){
-        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/afrfican.png);
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/africana/okra1-img.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         background-attachment: fixed;
     }
     .swiper-slide:nth-child(2){
-        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/bakery.png);
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/fastfood/specialrice1-img.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         background-attachment: fixed;
     }
     .swiper-slide:nth-child(3){
-        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(img/burger.png);
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/breakfast/friedriceandjollof-img.jpg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: con;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .swiper-slide:nth-child(4){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/bakery/cake2-3500-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .swiper-slide:nth-child(5){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/fastfood/jolof-turkey3-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .swiper-slide:nth-child(6){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/breakfast/spag-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .swiper-slide:nth-child(7){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/breakfast/eggsauce-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .swiper-slide:nth-child(8){
+        background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../css/img/africana/ppsoupp1-img.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         background-attachment: fixed;
     }
 
@@ -368,10 +404,11 @@ border-bottom-width: 5px;
         text-align: center;
     }
     .subm .submenu img{
-        width: 50%;
-        height: auto;
+        width: 200px;
+        height: 200px;
         display: block;
         margin: 0 auto 30px ;
+        border-radius: 50%;
     }
     .subm .submenu button{
         position: absolute;
@@ -469,7 +506,7 @@ border-bottom-width: 5px;
         grid-template-columns: 2fr 1fr 1fr 1fr;
         gap: 10px;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 0px;
         background-color: rgb(68, 66, 66);
     
     }
@@ -591,7 +628,7 @@ border-bottom-width: 5px;
     footer{
             width: 100%;
             margin-top: 0px;
-            background-color: rgb(11, 7, 230);
+            
             
         }
         footer .boxx{

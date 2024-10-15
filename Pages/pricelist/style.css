@@ -200,6 +200,9 @@ header .order p a{
 
 
 /* ---body starts-- */
+.color{
+    background-color: #ffd012;
+}
 .long{
     display: none;
 }
@@ -209,8 +212,6 @@ header .order p a{
     margin: 100px auto 0;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid brown; */
-    
 }
 .title h1{
 width: 100%;
@@ -233,7 +234,8 @@ font-weight: 200;
     grid-template-columns:repeat(2, 1fr);
     gap:10px 50px;
     justify-content: center;
-    /* border: 1px solid black; */
+    
+    
 }
 
 .menu{
@@ -246,6 +248,7 @@ font-weight: 200;
     border-top-left-radius:10px ;
     border-top-right-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+    
 }
 .menu-cont2{
     display: grid;
@@ -256,6 +259,7 @@ font-weight: 200;
 }
 .menu-cont2 menu{
     margin-top: 30px;
+    width: 10%;
 }
 .menu ul{
     list-style-type: none;
@@ -278,7 +282,7 @@ font-weight: 200;
     clear: both;
 }
 .menu ul li:nth-child(odd){
-    background-color: ;
+    
 }
 .menu ul li:nth-child(even){
     background-color: #ff4400;
@@ -301,7 +305,7 @@ font-weight: 200;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 10px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 0px;
     background-color: #262626;
 
 
@@ -425,6 +429,7 @@ footer{
         width: 100%;
         margin-top: 50px;
         /* background-color: red; */
+        /* background-color: white; */
     }
     footer .boxx{
         display: flex;
@@ -453,4 +458,39 @@ footer{
         margin: 50px auto 0;
     }
 /* ---footer ends */
+
+/* sliding-effects starts */
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top, 
+        rgba(51, 51, 51, 0.9),  /* Dark near the bottom */
+        rgba(51, 51, 51, 0.6),  /* Semi-transparent middle */
+        rgba(51, 51, 51, 0.3)   /* Light/transparent at the top */
+    );
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 10;
+    transition: transform 1s ease; /* For smooth sliding */
+    transform: translateY(0); /* Start in view */
+}
+
+
+.overlay img {
+    width: 200px;
+    height: auto;
+}
+ 
+.main-content {
+    display: none; /* Initially hidden */
+}
+/* sliding-effects ends */
+
 

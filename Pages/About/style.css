@@ -173,6 +173,10 @@ nav .navlink a{
     font-size: 16px;
     
 }
+header{
+    background-color: #ffd012;
+
+}
 header .order{
     width: 200px;
     padding: 20px 40px;
@@ -203,8 +207,9 @@ header .order p a{
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    margin-top: 200px;
+    margin-top: 0px;
     /* margin-top: 200px; */
+    background-color: #ffd012;
     
 }
 .sub{
@@ -315,7 +320,7 @@ content: 'T- ';
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 10px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 0px;
     background-color: #262626;
     
 
@@ -349,26 +354,26 @@ content: 'T- ';
     margin-left: 10px;
     font-size: px;
     font-weight: 1000;
-    color: #ff4400;
+    color:white;
 
 }
 .footer-cont .items:first-child p{
     margin-top: 20px;
     margin-left: 10px;
-    color: #ff4400;
+    color:white;
 
 }
 
 .footer-cont .items:nth-child(2){
     margin-top: 0px;
-    color: #ff4400;
+    color:white;
 
 }
 
 .footer-cont .items:nth-child(2) h3{
     margin-bottom: 20px;
     margin-top: 90px;
-    color: #ff4400;
+    color:white;
 
 
 }
@@ -376,7 +381,7 @@ content: 'T- ';
     display: block;
     text-decoration: none;
     padding: 7px;
-    color: #ff4400;
+    color:white;
 
     
 }
@@ -387,7 +392,7 @@ content: 'T- ';
 .footer-cont .items:nth-child(3) h3{
     margin-bottom: 20px;
     margin-top: 90px;
-    color: #ff4400;
+    color:white;
 
 
 }
@@ -395,7 +400,7 @@ content: 'T- ';
     display: block;
     text-decoration: none;
     padding: 7px;
-    color: #ff4400;
+    color:white;
     
 }
 
@@ -405,20 +410,20 @@ content: 'T- ';
 .footer-cont .items:nth-child(4) h3{
     margin-bottom: 20px;
     margin-top: 90px;
-    color: #ff4400;
+    color:white;
 
 }
 .footer-cont .items:nth-child(4) .icon{
     width: 70%;
     display: block;
     justify-content: space-between;
-    margin-left: -65px;
+    margin-left: -10px;
 
 } 
 .footer-cont .items:nth-child(4) .icon i{
     color:  black;
     font-size: 20px;
-    color: #ff4400;
+    color:white;
     padding: 5px;
     /* border: 1px solid black; */
     /* border-radius: 20px; */
@@ -468,4 +473,38 @@ footer{
     }
 
 /* ---footer ends */
+
+/* sliding-effects starts */
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top, 
+        rgba(51, 51, 51, 0.9),  /* Dark near the bottom */
+        rgba(51, 51, 51, 0.6),  /* Semi-transparent middle */
+        rgba(51, 51, 51, 0.3)   /* Light/transparent at the top */
+    );
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 10;
+    transition: transform 1s ease; /* For smooth sliding */
+    transform: translateY(0); /* Start in view */
+}
+
+
+.overlay img {
+    width: 200px;
+    height: auto;
+}
+ 
+.main-content {
+    display: none; /* Initially hidden */
+}
+/* sliding-effects ends */
 
